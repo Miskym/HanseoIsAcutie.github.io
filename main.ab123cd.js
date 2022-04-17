@@ -879,7 +879,7 @@ this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
                   <div class="title">Feedback</div>\n  \
                 </div>\n   \
                 <div class="control">\n    \
-                  <a href="mailto:duane@shakespearegeek.com?subject=Bardle Feedback" title="duane@shakespearegeek.com">Email</a>\n   \
+                  <a href="mailto:duane@shakespearegeek.com?subject=Bibimbaple Feedback" title="duane@shakespearegeek.com">Email</a>\n   \
                   |\n  \
                   <a href="https://twitter.com/intent/tweet?screen_name=shakespearegeek" target="blank" title="@shakespearegeek">Twitter</a>\n \
                 </div>\n  \
@@ -969,7 +969,7 @@ this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
     }
     customElements.define("game-toast", Aa), window.dataLayer = window.dataLayer || [], Ca("js", new Date);
     Ca("config", "G-2SSGMHY3NP", {
-        app_version: null === (Ea = window.bardle) || void 0 === Ea ? void 0 : Ea.hash,
+        app_version: null === (Ea = window.bibimbaple) || void 0 === Ea ? void 0 : Ea.hash,
         debug_mode: !1
     });
     var Answers = ["bibim", "magic", "avery", "mommy", "daddy", "poopy", "deemo", "sussy", "sebbb", "among", "susus", "adman", "brend", "sushi", "thatm", "nicky", "clash", "clans"]
@@ -1074,7 +1074,7 @@ this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
                       <game-icon icon="help"></game-icon>\n   \
                 </button>\n   \
          </div>\n   \
-              <div class="title">\n         BARDLE\n        </div>\n    \
+              <div class="title">\n         BIBIMBAPLE\n        </div>\n    \
                   <div class="menu">\n    \
                     <button id="statistics-button" class="icon" aria-label="statistics">\n  \
                      <game-icon icon="statistics"></game-icon>\n \
@@ -1679,7 +1679,7 @@ this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
     var Ts = document.createElement("template");
     Ts.innerHTML = '\n    <div class="graph-container">\n      <div class="guess"></div>\n      <div class="graph">\n        <div class="graph-bar">\n          <div class="num-guesses">\n        </div>\n      </div>\n      </div>\n    </div>\n';
     var Is = document.createElement("template");
-    Is.innerHTML = '\n  <div class="countdown">\n    <h1>Next BARDLE</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      Share <game-icon icon="share"></game-icon>\n    </button>\n  </div>';
+    Is.innerHTML = '\n  <div class="countdown">\n    <h1>Next BIBIMBAPLE</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      Share <game-icon icon="share"></game-icon>\n    </button>\n  </div>';
     var Ms = {
             currentStreak: "Current Streak",
             maxStreak: "Max Streak",
@@ -1744,7 +1744,7 @@ this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
                                     n = e.isWin,
                                     r = JSON.parse(window.localStorage.getItem(j)),
                                     i = JSON.parse(window.localStorage.getItem(S)),
-                                    l = "Bardle ".concat(s);
+                                    l = "Bibimbaple ".concat(s);
                                 l += " ".concat(n ? t : "X", "/").concat(6), o && (l += "*");
                                 var d = "";
                                 return a.forEach((function(e) {
@@ -1827,7 +1827,7 @@ this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
     }(c(HTMLElement));
     customElements.define("game-switch", Ps);
     var $s = document.createElement("template");
-    $s.innerHTML = '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Guess the <strong>BARDLE</strong> in 6 tries.</p>\n      <p>Each guess must be a valid 5 letter word. Words come from Shakespeare characters, classic quotes and general theatre terminology. Hit the enter button to submit.</p>\n      <p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p>\n      <div class="examples">\n        <p><strong>Examples</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="w" evaluation="correct" reveal></game-tile>\n            <game-tile letter="e"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="r"></game-tile>\n            <game-tile letter="y"></game-tile>\n          </div>\n          <p>The letter <strong>W</strong> is in the word and in the correct spot.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="i" evaluation="present" reveal></game-tile>\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="s"></game-tile>\n          </div>\n          <p>The letter <strong>I</strong> is in the word but in the wrong spot.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="v"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="g"></game-tile>\n            <game-tile letter="u" evaluation="absent" reveal></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>The letter <strong>U</strong> is not in the word in any spot.</p>\n        </div>\n      </div>\n      <p><strong>A new BARDLE will be available each day!<strong></p>\n<p>Follow <a href="http://www.twitter.com/ShakespeareGeek">ShakespeareGeek on Twitter</a>!</p>    </div>\n  </section>\n';
+    $s.innerHTML = '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Guess the <strong>BIMBIMBAPLE</strong> in 6 tries.</p>\n      <p>Each guess must be a valid 5 letter word. Words come from Shakespeare characters, classic quotes and general theatre terminology. Hit the enter button to submit.</p>\n      <p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p>\n      <div class="examples">\n        <p><strong>Examples</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="w" evaluation="correct" reveal></game-tile>\n            <game-tile letter="e"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="r"></game-tile>\n            <game-tile letter="y"></game-tile>\n          </div>\n          <p>The letter <strong>W</strong> is in the word and in the correct spot.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="i" evaluation="present" reveal></game-tile>\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="s"></game-tile>\n          </div>\n          <p>The letter <strong>I</strong> is in the word but in the wrong spot.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="v"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="g"></game-tile>\n            <game-tile letter="u" evaluation="absent" reveal></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>The letter <strong>U</strong> is not in the word in any spot.</p>\n        </div>\n      </div>\n      <p><strong>A new BIMBIMBAPLE will be available each day!<strong></p>\n<p>Follow <a href="http://www.twitter.com/ShakespeareGeek">ShakespeareGeek on Twitter</a>!</p>    </div>\n  </section>\n';
     var Hs = function(e) {
         r(t, e);
         var a = h(t);
