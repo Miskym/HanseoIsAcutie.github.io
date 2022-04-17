@@ -1,5 +1,5 @@
 
-this.bardle = this.bardle || {}, this.bardle.bundle = function(e) {
+this.bibimbaple = this.bibimbaple || {}, this.bibimbaple.bundle = function(e) {
     "use strict";
 
     function a(e) {
